@@ -5,10 +5,15 @@
     xmlns:local="using:Solidaridapp.Org.Solidaridapp.Inicial.Vista"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/05.jpg"/>
+    </Page.Background>
 
     <Grid>
+        <Button x:Name="btnPersona" Content="Soy una persona" HorizontalAlignment="Left" Margin="16,212,0,0" VerticalAlignment="Top" BorderBrush="#FFD15E00" Foreground="#FFD15E00" FontSize="40" Width="370" Click="btnPersona_Click"/>
+        <Button x:Name="btnInstitucion" Content="Soy una institución" HorizontalAlignment="Left" Margin="16,347,0,0" VerticalAlignment="Top" BorderBrush="#FFD15E00" Foreground="#FFD15E00" FontSize="40" Click="btnInstitucion_Click"/>
+        <TextBlock x:Name="txtAyudanos" HorizontalAlignment="Left" Margin="40,52,0,0" TextWrapping="Wrap" Text="Ayúdanos a conocerte mejor:" VerticalAlignment="Top" Foreground="#FFD15E00" FontSize="25" Width="325"/>
 
     </Grid>
 </Page>

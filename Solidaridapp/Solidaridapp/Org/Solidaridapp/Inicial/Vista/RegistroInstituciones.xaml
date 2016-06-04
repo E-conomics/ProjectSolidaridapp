@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Solidaridapp.Org.Solidaridapp.Inicial.Vista.RegistroInstituciones"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Solidaridapp.Org.Solidaridapp.Inicial.Vista"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/05.jpg"/>
+    </Page.Background>
+
+    <Grid>
+        <RadioButton x:Name="rbBenefactor" Content="Quiero ayudar" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbBeneficiario" Content="Necesito ayuda" HorizontalAlignment="Left" Margin="220,19,0,0" VerticalAlignment="Top"/>
+        
+
+    </Grid>
+</Page>

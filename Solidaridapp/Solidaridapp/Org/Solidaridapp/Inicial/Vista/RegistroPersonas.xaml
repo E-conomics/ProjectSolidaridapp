@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Solidaridapp.Org.Solidaridapp.Inicial.Vista.RegistroPersonas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Solidaridapp.Org.Solidaridapp.Inicial.Vista"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/05.jpg"/>
+    </Page.Background>
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" Text="Completa tu información" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="#FFD15E00"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="10,78,0,0" TextWrapping="Wrap" PlaceholderText="Nombre" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" PlaceholderText="Correo" VerticalAlignment="Top" Width="380" FontSize="25" InputScope="EmailSmtpAddress"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="10,373,0,0" PlaceholderText="Teléfono a 10 dígitos" VerticalAlignment="Top" Width="380" FontSize="25" InputScope="TelephoneNumber" TextWrapping="Wrap"/>
+        <TextBox x:Name="txtAp2" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" PlaceholderText="Segundo apellido" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <TextBox x:Name="txtAp1" HorizontalAlignment="Left" Margin="10,138,0,0" TextWrapping="Wrap" PlaceholderText="Primer apellido" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <DatePicker HorizontalAlignment="Left" Margin="258,246,0,0" VerticalAlignment="Top" Width="132"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,259,0,0" TextWrapping="Wrap" Text="Fecha de Nacimiento" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="Black"/>
+        <PasswordBox x:Name="txtClave" HorizontalAlignment="Left" Margin="10,435,0,0" VerticalAlignment="Top" Width="380" PlaceholderText="Contraseña"/>
+        <PasswordBox x:Name="txtConfirmacionClave" HorizontalAlignment="Left" Margin="10,496,0,0" VerticalAlignment="Top" Width="380" PlaceholderText="Confirma tu contraseña"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="10,544,0,0" VerticalAlignment="Top" Width="380" FontSize="25" BorderBrush="#FFD15E00" Foreground="#FFD15E00" Click="btnRegistrar_Click"/>
+    </Grid>
+</Page>

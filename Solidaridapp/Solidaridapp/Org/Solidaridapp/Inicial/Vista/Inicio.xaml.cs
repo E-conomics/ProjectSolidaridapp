@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -26,6 +27,7 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
         public Inicio()
         {
             this.InitializeComponent();
+         
         }
 
         /// <summary>
@@ -42,6 +44,12 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
             BDHelper creator = new BDHelper();
             creator.CheckFileExists();
             creator.onCreate();
+            //Frame.Navigate(typeof(Principal));
+        }
+
+        private void txbRegistrar_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Principal));
         }
     }
 }

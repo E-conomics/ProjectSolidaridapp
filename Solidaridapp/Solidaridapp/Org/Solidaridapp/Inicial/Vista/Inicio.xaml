@@ -5,14 +5,25 @@
     xmlns:local="using:Solidaridapp.Org.Solidaridapp.Inicial.Vista"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Background="#FFC9C9C9">
-    <Grid>
-        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Margin="22,229,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="357" FontSize="30"/>
-        <Button x:Name="btnIniciar" Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="22,415,0,0" VerticalAlignment="Top" Width="357" FontSize="30" Click="button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="154,198,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" FontSize="25" Foreground="Black"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="136,312,0,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" FontSize="25" Foreground="Black"/>
-        <PasswordBox x:Name="txtClave" HorizontalAlignment="Left" Margin="22,344,0,0" VerticalAlignment="Top" Width="357" FontSize="30"/>
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/05.jpg"/>
+    </Page.Background>
+    <Page.Foreground>
+        <ImageBrush Stretch="Fill"/>
+    </Page.Foreground>
+    <Grid >
+        <Rectangle HorizontalAlignment="Left" Height="349" Margin="0,175,0,0" VerticalAlignment="Top" Width="400">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Gray" Opacity="0.5"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox x:Name="txtUsuario" PlaceholderText="                         Usuario" HorizontalAlignment="Left" Margin="22,229,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="357" FontSize="30" SelectionHighlightColor="#FFD15E00"/>
+        <Button x:Name="btnIniciar" Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="22,368,0,0" VerticalAlignment="Top" Width="357" FontSize="25" Click="button_Click" Foreground="#FFD15E00" BorderBrush="#FFD15E00" UseLayoutRounding="True"/>
+        <PasswordBox x:Name="txtClave" PlaceholderText="                      Contraseña" HorizontalAlignment="Left" Margin="22,308,0,0" VerticalAlignment="Top" Width="357" FontSize="20" SelectionHighlightColor="#FFD15E00"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="122" Margin="87,37,0,0" VerticalAlignment="Top" Width="224" Source="/Assets/Logo_.png" Opacity="1"/>
-        <CheckBox x:Name="cbRecordarme" Content="Recordar mis datos" HorizontalAlignment="Left" Margin="105,522,0,0" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black"/>
+        <CheckBox x:Name="cbRecordarme" Content="Recordar mis datos" HorizontalAlignment="Left" Margin="107,445,0,0" VerticalAlignment="Top" Foreground="#FFD15E00" BorderBrush="#FFD15E00"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,534,82,0" TextWrapping="Wrap" Text="Si aún no eres parte del movimiento registráte" VerticalAlignment="Top" FontSize="20" Width="231" Foreground="#FFD15E00" TextAlignment="Center" Tapped="txbRegistrar_Tapped" />
+        <TextBlock x:Name="txbRegistrar" HorizontalAlignment="Right" Margin="0,580,86,0" TextWrapping="Wrap" Text="aquí" VerticalAlignment="Top" FontSize="20" Width="231" Foreground="#FFD15E00" TextAlignment="Center" Tapped="txbRegistrar_Tapped" FontStyle="Italic"  />
     </Grid>
 </Page>
