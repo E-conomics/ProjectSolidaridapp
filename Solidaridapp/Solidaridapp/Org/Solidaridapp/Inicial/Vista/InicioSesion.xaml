@@ -7,8 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Background="#FFE0E0E0">
     <Grid>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="22,188,0,0" TextWrapping="Wrap" PlaceholderText="Usuario"  VerticalAlignment="Top" Width="357" FontSize="30"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="22,275,0,0" TextWrapping="Wrap" PlaceholderText="Contraseña" VerticalAlignment="Top" Width="357" FontSize="30"/>
-        <Button x:Name="button" Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="22,358,0,0" VerticalAlignment="Top" Width="357" FontSize="30"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="22,188,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="357" FontSize="30"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="22,299,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="357" FontSize="30"/>
+        <Button x:Name="button" Content="Iniciar Sesión" HorizontalAlignment="Left" Margin="22,376,0,0" VerticalAlignment="Top" Width="357" FontSize="30"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="146,151,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" FontSize="25" Foreground="Black"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="124,261,0,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" FontSize="25" Foreground="Black"/>
     </Grid>
 </Page>
