@@ -111,6 +111,12 @@
     <Compile Include="Org\Solidaridapp\Inicial\Vista\ListaDonaciones.xaml.cs">
       <DependentUpon>ListaDonaciones.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Org\Solidaridapp\Inicial\Vista\PerfilBenefactor.xaml.cs">
+      <DependentUpon>PerfilBenefactor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Org\Solidaridapp\Inicial\Vista\PerfilBeneficiario.xaml.cs">
+      <DependentUpon>PerfilBeneficiario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Org\Solidaridapp\Inicial\Vista\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
@@ -168,6 +174,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Org\Solidaridapp\Inicial\Vista\ListaDonaciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Org\Solidaridapp\Inicial\Vista\PerfilBenefactor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Org\Solidaridapp\Inicial\Vista\PerfilBeneficiario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

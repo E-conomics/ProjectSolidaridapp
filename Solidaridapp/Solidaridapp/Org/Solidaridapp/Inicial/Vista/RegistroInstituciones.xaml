@@ -11,9 +11,20 @@
     </Page.Background>
 
     <Grid>
-        <RadioButton x:Name="rbBenefactor" Content="Quiero ayudar" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbBeneficiario" Content="Necesito ayuda" HorizontalAlignment="Left" Margin="220,19,0,0" VerticalAlignment="Top"/>
-        
+        <RadioButton x:Name="rbBenefactor" Content="Quiero ayudar" HorizontalAlignment="Left" Margin="18,52,0,0" VerticalAlignment="Top" BorderBrush="Black" Foreground="Black"/>
+        <RadioButton x:Name="rbBeneficiario" Content="Necesito ayuda" HorizontalAlignment="Left" Margin="216,52,0,0" VerticalAlignment="Top" BorderBrush="Black" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" Text="Completa tu información" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="#FFD15E00"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" PlaceholderText="Nombre" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <TextBox x:Name="txtRFC" HorizontalAlignment="Left" Margin="10,176,0,0" TextWrapping="Wrap" PlaceholderText="RFC" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <ComboBox x:Name="cmbGiro" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="176" BorderBrush="Black" Foreground="Black" PlaceholderText="Giro">
+            <ListViewItem Content="Escuela"/>
+            <ListViewItem Content="Orfanato"/>
+            <ListViewItem Content="Asilo"/>
+            <ListViewItem Content="Otro..."/>
+        </ComboBox>
+        <TextBox x:Name="txtBeneficiarios" HorizontalAlignment="Left" Margin="208,244,0,0" TextWrapping="Wrap" PlaceholderText="Beneficiarios" VerticalAlignment="Top" Width="176" FontSize="25"/>
+        <TextBox x:Name="txtCalleNumero" HorizontalAlignment="Left" Margin="10,311,0,0" TextWrapping="Wrap" PlaceholderText="Calle y Número" VerticalAlignment="Top" Width="380" FontSize="25"/>
+
 
     </Grid>
 </Page>
