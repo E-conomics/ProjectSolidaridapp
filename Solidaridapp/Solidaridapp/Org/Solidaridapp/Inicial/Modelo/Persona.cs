@@ -8,6 +8,7 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Modelo
 {
     public class Persona
     {
+
         public string nombre { get; set; }
         public string primerApellido { get; set; }
         public string segundoApellido { get; set; }
