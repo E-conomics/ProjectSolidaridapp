@@ -11,6 +11,16 @@
     </Page.Background>
 
     <Grid>
+        <Button x:Name="btnSolicitar" HorizontalAlignment="Left" Margin="13,172,0,0" VerticalAlignment="Top" BorderBrush="#FFD15E00" Foreground="#FFD15E00" FontSize="35" Width="370" Click="btnSolicitar_Click" Height="132">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" >
+    			Solicita apoyo
+            </TextBlock>
+        </Button>
+        <Button x:Name="btnRegistroDonaciones" HorizontalAlignment="Left" Margin="13,340,0,0" VerticalAlignment="Top" BorderBrush="#FFD15E00" Foreground="#FFD15E00" FontSize="35" Width="370" Click="btnRegistroDonaciones_Click" Height="132">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center">
+        		Ve las aportaciones que te han realizado
+            </TextBlock>
+        </Button>
 
     </Grid>
 </Page>

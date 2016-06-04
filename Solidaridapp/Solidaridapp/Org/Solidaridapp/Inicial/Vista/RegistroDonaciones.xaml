@@ -11,6 +11,16 @@
     </Page.Background>
 
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" Text="¡Gracias!" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="#FFD15E00"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="380" BorderBrush="Black" Foreground="Black" PlaceholderText="Selecciona una institución" FontSize="25">
+            <ListViewItem Content="Casa Hogar"/>
+            <ListViewItem Content="Asilo"/>
+            <ListViewItem Content="Centro Comunitario"/>
+            <ListViewItem Content="Escuela"/>
+        </ComboBox>
+        <CheckBox x:Name="cbServicio" Content="También tengo transporte" HorizontalAlignment="Left" Margin="80,261,0,0" VerticalAlignment="Top" FontSize="25" BorderBrush="Black" Foreground="Black"/>
+        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Margin="10,357,0,0" TextWrapping="Wrap" PlaceholderText="Valor monetario de la donación" VerticalAlignment="Top" Width="380" FontSize="25"/>
+        <Button x:Name="btnAportar" Content="Aportar" HorizontalAlignment="Left" Margin="10,451,0,0" VerticalAlignment="Top" Width="380" FontSize="25" BorderBrush="#FFD15E00" Foreground="#FFD15E00" Click="btnAportar_Click"/>
 
     </Grid>
 </Page>

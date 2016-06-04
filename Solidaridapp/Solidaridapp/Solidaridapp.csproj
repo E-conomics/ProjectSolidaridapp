@@ -102,9 +102,6 @@
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\SQLite.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\SQLiteAsync.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Usuario.cs" />
-    <Compile Include="Org\Solidaridapp\Inicial\Vista\AltaDonaciones.xaml.cs">
-      <DependentUpon>AltaDonaciones.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Org\Solidaridapp\Inicial\Vista\Inicio.xaml.cs">
       <DependentUpon>Inicio.xaml</DependentUpon>
     </Compile>
@@ -165,10 +162,6 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Org\Solidaridapp\Inicial\Vista\AltaDonaciones.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Org\Solidaridapp\Inicial\Vista\Inicio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

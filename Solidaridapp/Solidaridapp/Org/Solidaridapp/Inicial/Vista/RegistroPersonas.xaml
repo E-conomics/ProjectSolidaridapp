@@ -13,11 +13,11 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" Text="Completa tu información" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="#FFD15E00"/>
         <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="10,78,0,0" TextWrapping="Wrap" PlaceholderText="Nombre" VerticalAlignment="Top" Width="380" FontSize="25"/>
-        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" PlaceholderText="Correo" VerticalAlignment="Top" Width="380" FontSize="25" InputScope="EmailSmtpAddress"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" PlaceholderText="Correo electrónico" VerticalAlignment="Top" Width="380" FontSize="25" InputScope="EmailSmtpAddress"/>
         <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="10,373,0,0" PlaceholderText="Teléfono a 10 dígitos" VerticalAlignment="Top" Width="380" FontSize="25" InputScope="TelephoneNumber" TextWrapping="Wrap"/>
         <TextBox x:Name="txtAp2" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" PlaceholderText="Segundo apellido" VerticalAlignment="Top" Width="380" FontSize="25"/>
         <TextBox x:Name="txtAp1" HorizontalAlignment="Left" Margin="10,138,0,0" TextWrapping="Wrap" PlaceholderText="Primer apellido" VerticalAlignment="Top" Width="380" FontSize="25"/>
-        <DatePicker HorizontalAlignment="Left" Margin="258,246,0,0" VerticalAlignment="Top" Width="132"/>
+        <DatePicker HorizontalAlignment="Left" Margin="258,246,0,0" VerticalAlignment="Top" Width="132" Foreground="Black"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,259,0,0" TextWrapping="Wrap" Text="Fecha de Nacimiento" VerticalAlignment="Top" FontSize="25" Width="281" Foreground="Black"/>
         <PasswordBox x:Name="txtClave" HorizontalAlignment="Left" Margin="10,435,0,0" VerticalAlignment="Top" Width="380" PlaceholderText="Contraseña"/>
         <PasswordBox x:Name="txtConfirmacionClave" HorizontalAlignment="Left" Margin="10,496,0,0" VerticalAlignment="Top" Width="380" PlaceholderText="Confirma tu contraseña"/>

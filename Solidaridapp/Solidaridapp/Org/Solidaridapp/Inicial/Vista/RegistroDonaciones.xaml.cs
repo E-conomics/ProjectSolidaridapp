@@ -35,5 +35,10 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void btnAportar_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PerfilBenefactor));
+        }
     }
 }

@@ -35,5 +35,15 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void btnSolicitar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRegistroDonaciones_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ListaDonaciones));
+        }
     }
 }
