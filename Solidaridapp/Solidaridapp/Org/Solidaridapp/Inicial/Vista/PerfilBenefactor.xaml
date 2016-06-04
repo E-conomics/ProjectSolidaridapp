@@ -28,7 +28,7 @@
         </Button>
         <Button x:Name="btnDonacionesRealizadas" HorizontalAlignment="Left" Margin="16,416,0,0" VerticalAlignment="Top" BorderBrush="#FFD15E00" Foreground="#FFD15E00" FontSize="35" Width="370" Click="btnDonacionesRealizadas_Click" Height="131">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" SelectionChanged="TextBlock_SelectionChanged_2">
-        		Ve tus misiones completadas
+        		Ve tus aportaciones
             </TextBlock>
         </Button>
         
