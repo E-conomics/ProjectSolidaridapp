@@ -121,19 +121,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <SDKReference Include="Microsoft.VCLibs, version=12.0">
+    <SDKReference Include="Microsoft.VCLibs, Version=12.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Phone</Name>
     </SDKReference>
     <SDKReference Include="SQLite.WP81, Version=3.13.0">
       <Name>SQLite for Windows Phone 8.1</Name>
     </SDKReference>
-=======
+  </ItemGroup>
+  <ItemGroup>
     <Page Include="Org\Solidaridapp\Inicial\Vista\InicioSesion.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
->>>>>>> 830b832caeaaad0b1b00c7736a29efafee0f211d
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
