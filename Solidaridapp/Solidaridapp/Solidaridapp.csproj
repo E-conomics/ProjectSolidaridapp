@@ -88,7 +88,13 @@
     </Compile>
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Aportaciones.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDAportaciones.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BdBenefactor.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDBeneficiario.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDEmpresa.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDGiroBeneficiario.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDHelper.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDPersona.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Modelo\BDUsuario.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Benefactor.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Beneficiario.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Empresa.cs" />

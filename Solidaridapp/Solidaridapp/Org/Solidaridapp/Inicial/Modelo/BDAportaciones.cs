@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLiteNetExtensions.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,23 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Modelo
     public class BDAportaciones
     {
         [SQLite.PrimaryKey, SQLite.AutoIncrement]
-        public int idAportacion { get; set; }
-        public string Fecha { get; set; }
-        public string Hora { get; set; }
-        public Benefactor Benefactor { get; set; }
-        public Beneficiario Beneficiario { get; set; }
-        public enum TipoAportacion { especie, servicio };
-        public string ValorMonetarioAproximado { get; set; }
+        public int idAportaciones { get; set; }
+
+        [SQLite.MaxLength(50)]
+        public string fecha { get; set; }
+
+        [SQLite.MaxLength(50)]
+        public string hora { get; set; }
+
+        [ForeignKey(typeof(BdBenefactor))]
+        public int idBenefactor { get; set; }
+
+        [ForeignKey(typeof(BDBeneficiario))]
+        public int idBeneficiario { get; set; }
+
+        [SQLite.MaxLength(50)]
+        public string tipo { get; set; }
+
+        public int valorAprox { get; set; }
     }
 }
