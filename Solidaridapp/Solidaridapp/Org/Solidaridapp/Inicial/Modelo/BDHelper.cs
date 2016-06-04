@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -51,6 +52,29 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Modelo
                 Debug.WriteLine(ex);
                 return false;
             }
+        }
+        public bool DummyUser()
+        {
+            //using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            //{
+            //    dbConn.DropTable<BDUsuario>();
+            //    dbConn.CreateTable<BDUsuario>();
+            //}
+            //using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            //{
+            //    dbConn.RunInTransaction(() =>
+            //    {
+            //        dbConn.Insert(new BDUsuario() { correo = "Juan", clave = "No" });
+            //    });
+            //}
+            using (var dbConn = new SQLiteConnection(App.DB_PATH))
+            {
+                List<BDUsuario> miLista = dbConn.Table<BDUsuario>().ToList<BDUsuario>();
+                var miPersona = dbConn.Query<BDUsuario>("SELECT * FROM BDUsuario WHERE correo='" + "Juan" + "'").FirstOrDefault();
+                string res= miPersona.ToString();
+                
+            }
+            return true;
         }
     }
 }

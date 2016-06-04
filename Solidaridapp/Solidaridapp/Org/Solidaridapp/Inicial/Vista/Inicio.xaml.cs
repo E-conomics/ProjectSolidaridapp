@@ -26,6 +26,9 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
         public Inicio()
         {
             this.InitializeComponent();
+            BDHelper creator = new BDHelper();
+            creator.onCreate();
+            creator.DummyUser();
         }
 
         /// <summary>
@@ -39,9 +42,9 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Vista
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            BDHelper creator = new BDHelper();
-            creator.CheckFileExists();
-            creator.onCreate();
+            //BDHelper creator = new BDHelper();
+            //creator.onCreate();
+
         }
     }
 }

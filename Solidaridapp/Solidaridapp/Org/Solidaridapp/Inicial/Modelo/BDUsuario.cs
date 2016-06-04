@@ -19,5 +19,8 @@ namespace Solidaridapp.Org.Solidaridapp.Inicial.Modelo
 
         [SQLite.MaxLength(50)]
         public string clave { get; set; }
+
+        [SQLite.MaxLength(50)]
+        public string Auth { get; set; }
     }
 }
