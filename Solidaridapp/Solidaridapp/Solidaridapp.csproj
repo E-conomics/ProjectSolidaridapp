@@ -81,7 +81,6 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Folder Include="Org\Solidaridapp\Inicial\Controlador\" />
-    <Folder Include="Org\Solidaridapp\Inicial\Vista\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -97,6 +96,9 @@
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\SQLite.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\SQLiteAsync.cs" />
     <Compile Include="Org\Solidaridapp\Inicial\Modelo\Usuario.cs" />
+    <Compile Include="Org\Solidaridapp\Inicial\Vista\InicioSesion.xaml.cs">
+      <DependentUpon>InicioSesion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -119,12 +121,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <SDKReference Include="Microsoft.VCLibs, version=12.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Phone</Name>
     </SDKReference>
     <SDKReference Include="SQLite.WP81, Version=3.13.0">
       <Name>SQLite for Windows Phone 8.1</Name>
     </SDKReference>
+=======
+    <Page Include="Org\Solidaridapp\Inicial\Vista\InicioSesion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+>>>>>>> 830b832caeaaad0b1b00c7736a29efafee0f211d
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
